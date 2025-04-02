@@ -5,7 +5,8 @@ from configparser import ConfigParser
 def main():
     # initiate config parser and fetch input values from 'settings.ini'
     config = ConfigParser()
-    config.read('settings.ini')
+    configFile = "./config/settings.ini"  
+    config.read(configFile)
 
     namePrefix = config.get("input", "namePrefix").lower()
     genCount = int(config.get("input", "genCount"))
