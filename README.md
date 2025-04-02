@@ -54,13 +54,13 @@ This will generate and display a list of names in the console.
 
 
 <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-  <div style="text-align: center">
+  <div style="text-align: center; margin-right: 20px;">
     <p>If namePrefix = a and count = 20, the output:</p>
-    <img src="output/sample_output_1.png" alt="Sample Output 1" width="500" style="height:auto; max-height: 800px;">
+    <img src="output/sample_output_1.png" alt="Sample Output 1" width="250" style="height:auto; max-height: 800px;">
   </div>
   <div style="text-align: center;">
     <p>If namePrefix = ma and count = 7, the output:</p>
-    <img src="output/sample_output_2.png" alt="Sample Output 2" width="500" style="height:auto; max-height: 800px;">
+    <img src="output/sample_output_2.png" alt="Sample Output 2" width="250" style="height:auto; max-height: 800px;">
   </div>
 </div>
 
