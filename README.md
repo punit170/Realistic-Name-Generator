@@ -1,6 +1,13 @@
 # Neural Network-Based Realistic Name Generator
 
-This project uses a neural network-based approach to generate realistic names starting with a given prefix. The model was trained using an LSTM (Long Short-Term Memory) architecture, which learns character-level sequences and generates authentic names. The project includes functionality to generate realistic names based on the trained model.
+## Project Description
+
+<div>
+This project uses a neural network-based approach to generate realistic names starting with a given prefix. The model was trained using an LSTM (Long Short-Term Memory) architecture, which learns character-level sequences and generates authentic names. The project includes functionality to generate realistic names based on the trained model.<br><br>
+
+![a graphic cover image](./project-RNM-graphic-img.png) 
+
+</div>
 
 ## Requirements
 
@@ -20,13 +27,15 @@ pip install -r requirements.txt
 
 ## How to use the project
 
-### 1. Clone the repository
+<table><tr><td>1. <ins>Clone the repository</ins></td></tr></table>
 Clone this repository to your local machine:
 
+```md
 git clone <repository_url>
 cd <repository_name>
+```
 
-### 2. Set up config in `settings.ini`
+<table><tr><td>2. <ins>Set up config in `settings.ini`</ins></td></tr></table>
 Configure the settings by editing the `settings.ini` file. In the `config/` dir, you can set the following parameters:
 
 - **namePrefix**: The starting character(s) for generating names (e.g., `a`, `ba`, `jo`).
@@ -38,7 +47,7 @@ Example of `settings.ini`:
 namePrefix = a  
 genCount = 20
 
-### 3. Run `main.py`
+<table><tr><td>3. <ins>Run `main.py`</ins></td></tr></table>
 
 To generate names based on the prefix and count defined in the `settings.ini`, run the following in the terminal from the project directory:
 
@@ -50,22 +59,16 @@ This will generate and display a list of names in the console.
 
 ## Sample Output
 
-### Console Output Example:
+**<u>Console Output Example</u>:**
 
 
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
-  <div style="text-align: center; margin-right: 20px;">
-    <p>If namePrefix = a and count = 20, the output:</p>
-    <img src="output/sample_output_1.png" alt="Sample Output 1" width="250" style="height:auto; max-height: 800px;">
-  </div>
-  <div style="text-align: center;">
-    <p>If namePrefix = ma and count = 7, the output:</p>
-    <img src="output/sample_output_2.png" alt="Sample Output 2" width="250" style="height:auto; max-height: 800px;">
-  </div>
-</div>
+| `namePrefix`=a   `genCount`=20 | `namePrefix`=ma   `genCount`=7 |
+|--------------------------------|------------------------------|
+| <img src="output/sample_output_1.png" alt="Sample Output 1" width="250" style="vertical-align: top;"/> | <img src="output/sample_output_2.png" alt="Sample Output 2" width="250" style="vertical-align: top;"/> |
 
-### Loss vs Epoch Plot:
+
+**<u>Loss vs Epoch Plot</u>:**
 
 The following is  a plot for loss vs. epoch during model training. You can find the plot saved as `loss_vs_epoch.png` in the `output/` folder.
 
-![Loss vs Epoch Plot](output/loss_vs_epoch.png)
+<img src="output/loss_vs_epoch.png" alt="Loss vs Epoch" width="300" style="vertical-align: top;"/>
